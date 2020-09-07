@@ -27,4 +27,7 @@ $medewerkers = [
     'functie'  => 'Kickboxer'
   ]
 ];
+foreach($medewerkers as $medewerkers)
+    {echo $medewerkers['voornaam'] . " " . $medewerkers['achternaam'] . "is een". $medewerkers['functie'] . "<br>" ;    
+}
 ?>
