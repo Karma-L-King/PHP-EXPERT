@@ -11,10 +11,6 @@ $medewerkers = [
     'functie'  => 'president'
   ]
 ];
-echo $medewerkers[0]['voornaam']; 
-echo $medewerkers[0]['achternaam'];
-echo $medewerkers[0]['functie'];
-echo $medewerkers[1]['voornaam']; 
-echo $medewerkers[1]['achternaam'];
-echo $medewerkers[1]['functie'];
+echo $medewerkers[0]['voornaam'] . " " . $medewerkers[0]['achternaam'] . " is " . $medewerkers[0]['functie'] . "<br>" ;
+echo $medewerkers[1]['voornaam'] . " " . $medewerkers[1]['achternaam'] . " is " . $medewerkers[1]['functie'] ;
 ?>
