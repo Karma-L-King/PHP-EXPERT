@@ -37,3 +37,7 @@ $games = [
         'prijs' => '40.00'
     ]
 ];
+foreach($games as $games)
+    {echo $games['naam'] ." ".  $games['uitgever'] ." " . $games['prijs'] . "<br>"  ;
+}  
+?>

@@ -28,6 +28,6 @@ $medewerkers = [
   ]
 ];
 foreach($medewerkers as $medewerkers)
-    {echo $medewerkers['voornaam'] . " " . $medewerkers['achternaam'] . "is een". $medewerkers['functie'] . "<br>" ;    
+    {echo $medewerkers['voornaam'] . " " . $medewerkers['achternaam'] . " is een ". $medewerkers['functie'] . "<br>" ;    
 }
 ?>
