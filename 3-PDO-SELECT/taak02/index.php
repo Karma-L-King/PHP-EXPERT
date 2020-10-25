@@ -1,3 +1,4 @@
+ 
 <?php
 $hostdb = 'localhost';
 $namedb = 'toolsforever';
@@ -5,13 +6,14 @@ $userdb = 'root';
 $passdb = '';
 
 
-$conn = new PDO("mysql:host=$hostdb; dbname=$namedb", $userdb, $passdb);
- 
-  
-$sql = "SELECT firstname, lastname, email, id FROM users";
-$result = $conn->query($sql);
+  $conn = new PDO("mysql:host=$hostdb; dbname=$namedb", $userdb, $passdb);
 
-  foreach($result as $row) {
-    echo "<h2>".$row['firstname']. " " .$row['lastname']. " </h2>" .' Email:'. $row['email'] . "<br>". "Rol:" . $row['id'] . '<br>';
-  }
+  $sql = "SELECT name, address, city FROM locations";
+  $result = $conn->query($sql);
+
+    foreach($result as $row) {
+      echo "<h2>" . $row['name'] . "</h2>" . "Adres:". $row['address']."<br> Stad:".$row['city'].'<br>';
+    }
+
+
 ?>
